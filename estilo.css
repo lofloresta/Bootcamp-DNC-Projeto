@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+    --fonte-padrao: 'Inter';
+}
+
 body {
-    font-family: 'Inter';
+    font-family: var(--fonte-padrao);
     margin: 0px;
     padding: 0px;
     background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
@@ -14,7 +21,7 @@ body {
     width: 100%;
     height: 103px;
     border: 1px solid #000000;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +44,7 @@ body {
     }
 
     #principal div a:hover {
-        color:  #cccccc;
+        color:  var(--cinza-hover);
     }
 
     #principal button {
@@ -48,13 +55,42 @@ body {
         margin-right: 10%;
         width: 80px;
         height: 40px;
-        background: #0C70F2;
+        background: var(--azul-dnc);
         border: 0px;
 
-        background: #0170F2;
+        background: var(--azul-dnc);
         box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
 
         cursor: pointer;
     }
    
     /* Fim do Menu de Navegação*/
+
+    /* Seção Principal do site */
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    header {
+        color:#ffffff;
+    }
+
+        header h1 {
+            font-weight: 800;
+            font-size: 80px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        header h2 {
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 190px;
+        }
