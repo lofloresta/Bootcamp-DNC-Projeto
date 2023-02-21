@@ -253,3 +253,71 @@ body {
         footer .linha2 a:hover {
             color:var(--cinza-hover)
         }
+
+@media only screen and (max-width: 600px) {
+
+    /* menu */
+    #principal {
+        flex-direction: column;
+        height: auto;
+    }
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    #menu a {
+        height: 50px;
+        align-items: center;
+        display: flex;
+    }
+
+    #principal button {
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* Seção */
+    
+    section h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 25px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    /* Formulario */
+
+    form {
+        width: 85%;
+        font-size: 20px;
+    }
+    .checkboxItens label{
+        font-size: 17px;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1);
+    }
+
+     /* Rodapé */
+
+     footer .linha1 {
+        flex-direction: column;
+     }
+
+     footer .endereco {
+        width: 85%;
+        font-size: 17px;
+        margin-bottom: 20px;
+     }
+
+     footer .linha2 a {
+        font-size: 17px;
+     }
+}
